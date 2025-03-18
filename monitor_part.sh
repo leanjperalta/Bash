@@ -1,4 +1,3 @@
-#The mail command forwards the parameters to an smtp relay server configured in the local .mailrc file.
 #!/bin/bash
 threshold=80
 df -H | grep -vE '^Filesystem|tmpfs|cdrom|loop' | awk '{ print $5 " " $1 }' | while read output;
