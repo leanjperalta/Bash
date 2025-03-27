@@ -11,7 +11,7 @@ for i in $(seq $START $END); do
     echo "🔍 Descubriendo dispositivos en: $SUBNET"
     
     # Ejecutar el descubrimiento en cada subnet
-    $NETDISCO_BIN discover -d "$SUBNET"
+    $NETDISCO_BIN -D discover -d "$SUBNET"
     
     # Esperar 5 segundos entre cada ejecución (ajusta según necesidad)
     sleep 5
